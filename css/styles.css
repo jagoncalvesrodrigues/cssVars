@@ -1,9 +1,17 @@
+:root{
+    --bg-color:blue;
+    --width-box:0;
+    --position-x:0;
+    --position-y:0;
+}
 *{
     box-sizing: border-box;
 }
 body{
     margin: 0;
     font-family: sans-serif;
+    height: 500vh;
+    background-color: var(--bg-color);
 }
 img{
     display: block;
@@ -19,3 +27,23 @@ ul{
     margin-top: 0;
     margin-bottom: 0;
 }
+.box{
+    width: var(--width-box);
+    height: 40px;
+    background-color: red;
+}
+
+.main{
+    width: 100%;
+    position: fixed;
+}
+
+.mouse-box {
+    position: fixed;
+    top: var(--position-y);
+    left: var(--position-x);
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    pointer-events: none;
+  }
